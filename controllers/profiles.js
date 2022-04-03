@@ -1,4 +1,6 @@
 import { Profile } from '../models/profile.js'
+// import axios from 'axios'
+import {v2 as cloudinary} from 'cloudinary'
 
 function index(req, res) {
   Profile.find({})
@@ -9,4 +11,8 @@ function index(req, res) {
   })
 }
 
-export { index }
+
+
+export { 
+  index,
+}
